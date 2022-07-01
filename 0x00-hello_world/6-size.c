@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+ * main - run the main function
+ *
+ * Description: Runs printf and print statement
+ * Return: Return 0 to exit
+ */
+
 int main(void)
 
 {
