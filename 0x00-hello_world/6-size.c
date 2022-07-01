@@ -1,17 +1,13 @@
 #include<stdio.h>
 
 /**
- * main - run the main function
+ * main - Run main function
  *
- * Description: Runs printf and print statement
- * Return: Return 0 to exit
+ * Description: Run printf multiple times to print size of different types
+ * Return: Return 0 to exit function
  */
-
 int main(void)
-	
-
 {
-/* sizes of various data types*/
 	int i;
 	char c;
 	long int l;
