@@ -11,7 +11,7 @@ int main(void)
 	
 
 {
-	/* sizes of various data types*/
+/* sizes of various data types*/
 	int i;
 	char c;
 	long int l;
