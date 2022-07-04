@@ -1,51 +1,32 @@
+#include <stdlib.h>
 #include <stdio.h>
-
-
+#include <time.h>
 
 /**
+ * main - Prints base 16
+ * @void: Empty parameter list for main.
  *
- ** main - entry point
+ * Description: Prints all hexadecimals
  *
- ** Description: print the numbers.
- *
- ** Return: 0
- *
- **/
-
-
-
+ * Return: 0 for success
+*/
 int main(void)
-
 {
+	int num = 48;
 
-	int number = 48;
-
-	int max = 57;
-
-	char letter = 'a';
-
-	char f = 'f';
-
-
-
-	while (number <= max)
-
+	while (num <= 57)
 	{
-
-		putchar (number);
-
-		number++;
-
+		putchar(num);
+		num++;
 	}
 
-	while (letter <= f)
+	num = 97;
 
+	while (num <= 102)
 	{
-		putchar (letter);
-		letter++;
+		putchar(num);
+		num++;
 	}
-
-	putchar ('\n');
+	putchar('\n');
 	return (0);
-
 }
