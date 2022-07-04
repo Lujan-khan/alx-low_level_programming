@@ -1,35 +1,24 @@
+#include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
 /**
+ * main - Prints base 10 numbers
+ * @void: Empty parameter list for main.
  *
- *  * main - entry point
+ * Description: Prints numbers 0-9
  *
- *   * Description: print the alphabet using putchar.
- *
- *    * Return: 0
- *
- *     */
-
+ * Return: 0 for success
+*/
 int main(void)
-
 {
+	char num = '0';
 
-	int number = 0;
-
-	int max = 9;
-
-
-	while (number <= max)
-
+	while (num <= '9')
 	{
-		printf("%d", number);
-
-		number++;
-
+		putchar(num);
+		num++;
 	}
-
-	putchar ('\n');
-
+	putchar('\n');
 	return (0);
-
 }
