@@ -1,37 +1,24 @@
+#include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
 /**
+ * main - Prints base 10 numbers
+ * @void: Empty parameter list for main.
  *
- ** main - entry point
+ * Description: Prints numbers 0-9
  *
- ** Description: print the numbers.
- *
- ** Return: 0
- *
- **/
-
-
-
+ * Return: 0 for success
+*/
 int main(void)
-
 {
+	int num = 48;
 
-	int number = 48;
-	int max = 57;
-
-
-	while (number <= max)
-
+	while (num <= 57)
 	{
-
-		putchar (number);
-
-		number++;
+		putchar(num);
+		num++;
 	}
-
-	putchar ('\n');
-
-
+	putchar('\n');
 	return (0);
-
 }
