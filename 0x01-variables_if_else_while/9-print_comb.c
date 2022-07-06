@@ -1,57 +1,29 @@
+#include <stdlib.h>
 #include <stdio.h>
-
-
+#include <time.h>
 
 /**
+ * main - writes 0-9
+ * @void: Empty parameter list for main.
  *
- *  * main - entry point
+ * Description: Writes 0-9 with comma and space
  *
- *   * Description: print the numbers.
- *
- *    * Return: 0
- *
- *     */
-
-
-
+ * Return: 0 for success
+*/
 int main(void)
-
 {
+	int num = 48;
 
-		int number = 48;
-
-			int max = 57;
-
-			/*el 48 es 0 en asci y el 57 es 9 en asci */
-
-
-
-				while (number <= max)
-
-						{
-
-									putchar (number);
-
-											if (number < max)
-
-														{
-
-																		putchar (',');
-
-																					putchar (' ');
-
-																							}
-
-
-
-													number++;
-
-														}
-
-					putchar ('\n');
-
-
-
-						return (0);
-
+	while (num < 58)
+	{
+		putchar(num);
+		if (num < 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		num++;
+	}
+	putchar('\n');
+	return (0);
 }
