@@ -3,7 +3,7 @@
  * Auth:Fidelis kanu
  */
 
-#include "holberton.h"
+#include "main.h"
 
 /**
  * print_number - Prints an integer.
