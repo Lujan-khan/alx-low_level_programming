@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 
+
 /**
- * exponent - x to the power of y
- * @x: base number
- * @y: exponent
- * Description: calcuates x^y
- * Return: x^y
+ * main - check the code
  *
- **/
+ * Return: Always 0.
+ */
 
 int main(void)
 {
