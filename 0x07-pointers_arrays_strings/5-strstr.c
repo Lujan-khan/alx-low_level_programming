@@ -1,24 +1,44 @@
-#ifndef MAIN_H
-#define MAIN_H
-
-/**
- * File: main.h
- * Auth: Fidelis Kanu
- * Desc: Header file containing prototypes for all functions
- *       used in the 0x06-pointers_arrays_strings directory.
+/*
+ * File: 5-strstr.c
+ * Auth: Fideli Kanu
  */
 
-#include <stddef.h>
+#include "main.h"
 
-int _putchar(char c);
-void *_memset(void *s, int c, size_t n);
-char *_memcpy(char *dest, char *src, unsigned int n);
-char *_strchr(char *s, char c);
-unsigned int _strspn(char *s, char *accept);
-char *_strpbrk(char *s, char *accept);
-char *_strstr(char *haystack, char *needle);
-void print_chessboard(char (*a)[8]);
-void print_diagsums(int *a, int size);
-void set_string(char **s, char *to);
+/**
+ * _strstr - Locates a substring.
+ * @haystack: The string to be searched.
+ * @needle: The substring to be located.
+ *
+ * Return: If the substring is located - a pointer to the beginning
+ *                                       of the located substring.
+ *         If the substring is not located - NULL.
+ */
 
-#endif
+char *_strstr(char *haystack, char *needle)
+{
+	int index;
+
+	if (*needle == 0)
+		return (haystack);
+
+	while (*haystack)
+	{
+		index = 0;
+
+		if (haystack[index] == needle[index])
+		{
+			do {
+				if (needle[index + 1] == '\0')
+					return (haystack);
+
+				index++;
+
+			} while (haystack[index] == needle[index]);
+		}
+
+		haystack++;
+	}
+
+	return ('\0');
+}
