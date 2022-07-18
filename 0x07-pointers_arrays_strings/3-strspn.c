@@ -1,25 +1,50 @@
 #include "main.h"
-
 /**
- * _strspn - gets lengthof a prefix substring
- * @s: string to check
- * @accept: string to check against
+ * _strspn - Function that gets the lenght of a prefix substring.
+ * @s: Pointer to the initial segment
+ * @accept: Pointer to the acceptance segme
  *
- * Return: number of bytes of s in accept
+ * Return: Number of coincidences (unsigned int)
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j;
+	int i;
+	int j;
+	unsigned int counter = 0;
+	int len_long_str = strleng(s);
+	int len_accept = strleng(accept);
 
-	for (i = 0; s[i]; i++)
+	for (i = 0; i < len_long_str - 1; i++)
 	{
-		for (j = 0; accept[j]; j++)
+		for (j = 0; j < len_accept; j++)
 		{
-			if (s[i] == accept[j])
+			if (*(s + i) == *(accept + j))
+			{
+				counter++;
 				break;
+			}
+			if (*(accept + j) == '\0')
+				return (counter);
 		}
-		if (!accept[j])
-			break;
 	}
+	return (counter);
+}
+
+/**
+ * strleng - Function that gets the length of a string.
+ * @a: Pointer to a string
+ *
+ * Return: Length of the string (int)
+ */
+
+int strleng(char *a)
+{
+	int i = 0;
+
+	while (a[i] != '\0')
+	{
+		i++;
+	}
+	i++;
 	return (i);
 }
