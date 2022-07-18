@@ -1,6 +1,6 @@
 /*
  * File: 3-strspn.c
- * Auth: Brennan D Baraban
+ * Auth: Fidelis Kanu
  */
 
 #include "main.h"
