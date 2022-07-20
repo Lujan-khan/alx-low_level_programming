@@ -1,5 +1,11 @@
+/*
+ * File: 8-print_diagsums.c
+ * Auth: Fidelis Kanu
+ */
+
 #include <stdio.h>
 #include "main.h"
+
 /**
  * print_diagsums - Entry point
  * @a: input
