@@ -7,7 +7,7 @@
 #include "main.h"
 
 /**
- * 8-print_diagsums.c
+ * print_diagsums - Entry point
  * @a: input
  * @size: input
  * Return: Always 0 (Success)
