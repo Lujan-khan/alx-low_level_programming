@@ -28,7 +28,3 @@ void print_diagsums(int *a, int size)
 	printf("%d, %d\n", total1, total2);
 	
 }
-int main()
-{
-	return 0;
-}
