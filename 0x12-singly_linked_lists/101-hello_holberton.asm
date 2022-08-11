@@ -10,4 +10,3 @@ main:
 	ret
 format:
 	db "Hello, Holberton", 10, 0
-/**********999kk***********/
